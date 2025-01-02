@@ -1,0 +1,54 @@
+### Steps to Extract Digits from a Given Number \( N \)
+
+1. **Understand the Problem**:  
+   Extract digits from a given number \( N \). For example, if \( N = 7789 \), extract each digit sequentially.
+
+2. **Optimal Approach**:  
+   Use the modulus operator (\( \% \)) and integer division (\( // \)) to extract digits efficiently.
+
+3. **Steps to Extract Digits**:
+   - **Extract the Last Digit**:  
+     - Calculate \( N \% 10 \).  
+       This operation gives the last digit of \( N \).  
+       Example: \( 7789 \% 10 = 9 \).
+
+   - **Remove the Last Digit**:  
+     - Perform integer division (\( N // 10 \)).  
+       This removes the last digit from \( N \).  
+       Example: \( 7789 // 10 = 778 \).
+
+   - **Repeat the Process**:  
+     - To extract the next digit, repeat the steps:  
+       - Use \( N \% 10 \) to get the next last digit.  
+       - Use \( N // 10 \) to remove the extracted digit.  
+     Example for \( N = 7789 \):  
+     - \( 778 \% 10 = 8 \)  
+     - \( 778 // 10 = 77 \)  
+     - \( 77 \% 10 = 7 \)  
+     - \( 77 // 10 = 7 \)  
+     - \( 7 \% 10 = 7 \).
+
+4. **Final Result**:  
+   By following the above steps repeatedly, all digits of \( N \) can be extracted sequentially.
+
+### Note:  
+This approach works for any positive integer \( N \).
+
+
+Here is the corrected and rewritten algorithm:  
+
+
+### Algorithm to Extract Digits of a Number:
+
+1. **Step 1**: Initialize an empty vector \( \text{ans} \) to store the extracted digits.
+
+2. **Step 2**: While \( N > 0 \), perform the following steps:
+   - Extract the last digit of \( N \) by calculating \( N \% 10 \) and store it in a variable \( \text{lastDigit} \).
+   - Append \( \text{lastDigit} \) to the vector \( \text{ans} \).
+   - Remove the last digit from \( N \) by performing integer division: \( N = N // 10 \).
+
+3. **Step 3**: Reverse the vector \( \text{ans} \) to obtain the digits in the correct left-to-right order.
+
+4. **Step 4**: Return the vector \( \text{ans} \).
+
+
