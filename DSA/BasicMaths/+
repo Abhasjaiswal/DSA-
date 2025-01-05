@@ -1,0 +1,36 @@
+                                
+#include <iostream>
+#include <algorithm>
+
+using namespace std;
+
+int findGcd(int a, int b) {
+    while(a > 0 && b > 0) {
+        if(a > b) {
+            a = a % b;
+        }
+        el
+    if(a == 0) {
+        return b;
+    }
+    // If a is not 0,
+    // return a as the GCD
+    return a;
+}
+
+
+
+
+int main() {
+    int n1 = 20, n2 = 15;
+    
+    // Find the GCD of n1 and n2
+    int gcd = findGcd(n1, n2);
+
+    cout << "GCD of " << n1 << " and " << n2 << " is: " << gcd << endl;
+
+    return 0;
+}
+    
+                                
+                            
