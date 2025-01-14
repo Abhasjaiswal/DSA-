@@ -1,0 +1,8 @@
+Recursion - When a function calls itself untill a specified condition is met.
+Recursion is a common mathematical and programming concept. It means that a function calls itself. This has the benefit of meaning that you can loop through data to reach a result.
+
+Stack Overflow - A stack overflow occurs when there is a recursive function (a function that calls itself) without an exit point. The function calls itself with no way to stop.*/ This leads to segmenation fault.
+
+Base Case - The condition when the recursion ends. The base case is a condition that stops the recursive function from calling itself. It is a condition that stops the recursion.*/
+
+
