@@ -14,5 +14,4 @@ int main(){
   cin>>N;
   printGfg(N);
   return 0;
-}
-
+} 
